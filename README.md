@@ -2,7 +2,7 @@
 
 [![https://yago.me/tg-bot](https://img.shields.io/badge/💬_Telegram-Avirabot-blue.svg)](https://telegram.me/avirabot)
 
-**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**.
+**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) and [Seed/telegram-bot](https://github.com/seedteam/teleseed) licensed under the [GNU General Public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**.
 # Features
 
 * **A powerful antispam system with custom sensitivity for each group**
@@ -209,15 +209,15 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 cd $HOME
 git clone https://github.com/SEEDTEAM/TeleSeed.git -b supergroups
 cd TeleSeed
-chmod +x launch.sh
-./launch.sh install
-./launch.sh # Enter a phone number & confirmation code.
+chmod +x run.sh
+./run.sh install
+./run.sh # Enter a phone number & confirmation code.
 ```
 ### One command
 To install everything in one command (useful for VPS deployment) on Debian-based distros, use:
 ```sh
 #https://github.com/yagop/telegram-bot/wiki/Installation
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/SEEDTEAM/TeleSeed.git -b supergroups && cd TeleSeed && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/SEEDTEAM/TeleSeed.git -b supergroups && cd TeleSeed && chmod +x ./run.sh && ./run.sh install && ./run.sh
 ```
 
 * * *
